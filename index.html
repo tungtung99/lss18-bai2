@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hienthi"></div>
+    <script>
+        var hienthi = document.getElementById("hienthi")
+        var sOut = "<table border=2>";
+            
+        for (var y = 1; y < 10; y++) {
+            sOut += "<tr>";
+            for (var x = 2; x < 10; x++) {
+                sOut += "<td>" + x+'x'+y+'='+(y*x) + "</td>";
+            }
+            sOut += "</tr>";
+        }
+        sOut += "</table>";
+        hienthi.innerHTML = sOut
+    </script>
+</body>
+</html>
